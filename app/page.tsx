@@ -39,26 +39,63 @@ export default async function HomePage() {
   return (
     <div className="mx-auto max-w-screen-xl px-6 md:px-10 lg:px-16 py-16">
       {/* Hero */}
-      <section className="text-center max-w-4xl mx-auto mb-16">
+      <section className="text-center max-w-4xl mx-auto mb-10">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[var(--dark-green)] mb-6">
-          Explore Biology Through Research
+          The BioMed Journal
         </h1>
         <p className="text-lg md:text-2xl text-[var(--light-green)] leading-relaxed">
-          A student-led platform dedicated to publishing research, mentoring
-          young scientists, and creating opportunities in the biological sciences.
+          Workshops, projects, and opportunities in biological sciences.
         </p>
       </section>
 
-      {/* Quick links */}
-      <section className="mb-16">
-        <LinkSection
-          title="Explore The BioMed Journal"
-          links={[
-            { label: "About Us", url: "/about" },
-            { label: "Medium", url: "https://medium.com/@thebiomedjournal" },
-            { label: "Substack", url: "https://substack.com/@thebiomedjournal" },
-          ]}
-        />
+      {/* Quick links banner */}
+      <LinkSection
+        title="Explore The BMJ"
+        links={[
+          { label: "Events", url: "/events" },
+          { label: "About Us", url: "/about" },
+          { label: "Medium", url: "https://medium.com/@thebiomedjournal" },
+          { label: "Substack", url: "https://substack.com/@thebiomedjournal" },
+        ]}
+      />
+
+      {/* Latest Events */}
+      <section className="mt-16 mb-16">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-[var(--dark-green)]">
+            Latest Events
+          </h2>
+          <Link
+            href="/events"
+            className="text-[var(--light-green)] font-medium hover:underline"
+          >
+            View all programs →
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-[var(--light-green)]/10 p-8 rounded-2xl border border-[var(--light-green)]/30 hover:shadow-md transition-shadow">
+            <div className="flex justify-between items-start mb-4">
+              <h3 className="text-2xl font-bold text-[var(--dark-green)]">Middle School Summer Camp</h3>
+              <span className="bg-[var(--dark-green)] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Upcoming</span>
+            </div>
+            <p className="text-[var(--dark-green)] opacity-90 mb-6">
+              Join us this summer for an immersive science camp geared towards middle schoolers, focusing on foundational concepts and fun biological experiments.
+            </p>
+            <Link href="/events" className="font-semibold text-[var(--light-green)] hover:underline">Learn more & Sign up →</Link>
+          </div>
+
+          <div className="bg-[var(--light-green)]/10 p-8 rounded-2xl border border-[var(--light-green)]/30 hover:shadow-md transition-shadow">
+            <div className="flex justify-between items-start mb-4">
+              <h3 className="text-2xl font-bold text-[var(--dark-green)]">HS Summer Project</h3>
+              <span className="bg-[var(--dark-green)] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Upcoming</span>
+            </div>
+            <p className="text-[var(--dark-green)] opacity-90 mb-6">
+              A comprehensive summer research and project-building opportunity designed to equip high schoolers with tangible computational and laboratory skills.
+            </p>
+            <Link href="/events" className="font-semibold text-[var(--light-green)] hover:underline">Learn more →</Link>
+          </div>
+        </div>
       </section>
 
       {/* Embedded article directory */}

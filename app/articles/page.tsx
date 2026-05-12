@@ -88,9 +88,24 @@ export default function ArticlesDirectory() {
 
   return (
     <div className="mx-auto max-w-screen-xl px-6 md:px-12 py-12">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-[var(--dark-green)] text-center mb-8">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-[var(--dark-green)] text-center mb-6">
         Articles
       </h1>
+
+      {/* Publishing Call to Action */}
+      <div className="mb-10 flex justify-center">
+        <div className="bg-[var(--light-green)]/10 border border-[var(--light-green)]/30 rounded-xl px-6 py-4 flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-2xl text-center sm:text-left shadow-sm">
+          <p className="text-[var(--dark-green)] text-lg font-medium">
+            Interested in publishing with us?
+          </p>
+          <Link 
+            href="/contact" 
+            className="px-6 py-2.5 bg-[var(--dark-green)] text-white text-sm font-bold rounded-lg hover:bg-[var(--light-green)] transition-colors whitespace-nowrap"
+          >
+            Go to Publishing Form
+          </Link>
+        </div>
+      </div>
 
       {/* Search Input */}
       <div className="mb-8 flex justify-center">
