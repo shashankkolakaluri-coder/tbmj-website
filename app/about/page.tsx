@@ -1,22 +1,22 @@
 import LinkSection from "@/components/LinkSection";
-import TeamCard from "@/components/TeamCard";
+// import TeamCard from "@/components/TeamCard";
 
-const TeamList = [
-  {
-    name: "Haadiyah Pathan",
-    role: "Co-Founder",
-    image: "/team/haadiyah.avif",
-    about:
-      "Hey, I am Haadiyah Pathan, I am a junior at Irvington High School, Fremont, CA. I founded this organization to provide accessible research opportunities to students after my continuous struggle of being unable to get the right mentorship for research. My future goals are to make The BioMed Journal large scale, and to pursue medicine. During my undergrad, I want to pursue molecular biology.",
-  },
-  {
-    name: "Rania Khan",
-    role: "Co-Founder",
-    image: "/team/rania.avif",
-    about:
-      "Hi, my name is Rania, and I am a junior at Irvington High school. As one of the co-founders of the Biomed Journal, I hope to grow this platform into a place where all students can teach, explore, and learn from each other.",
-  },
-];
+// const TeamList = [
+//   {
+//     name: "Haadiyah Pathan",
+//     role: "Co-Founder",
+//     image: "/team/haadiyah.avif",
+//     about:
+//       "Hey, I am Haadiyah Pathan, I am a junior at Irvington High School, Fremont, CA. I founded this organization to provide accessible research opportunities to students after my continuous struggle of being unable to get the right mentorship for research. My future goals are to make The BioMed Journal large scale, and to pursue medicine. During my undergrad, I want to pursue molecular biology.",
+//   },
+//   {
+//     name: "Rania Khan",
+//     role: "Co-Founder",
+//     image: "/team/rania.avif",
+//     about:
+//       "Hi, my name is Rania, and I am a junior at Irvington High school. As one of the co-founders of the Biomed Journal, I hope to grow this platform into a place where all students can teach, explore, and learn from each other.",
+//   },
+// ];
 
 export default function Page() {
   return (
@@ -46,7 +46,8 @@ export default function Page() {
         />
       </div>
 
-      <section className="mt-24">
+      {/* Team section — commented out for now */}
+      {/* <section className="mt-24">
         <div className="text-center mb-12">
           <p className="uppercase tracking-[0.2em] text-sm text-[var(--light-green)] font-semibold mb-2">
             Leadership
@@ -56,12 +57,12 @@ export default function Page() {
           </h2>
           <div className="w-24 h-1 bg-[var(--light-green)] mx-auto mt-4 rounded-full opacity-70" />
         </div>
-  q      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
           {TeamList.map((member, index) => (
             <TeamCard key={index} {...member} />
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
